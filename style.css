@@ -1,0 +1,197 @@
+/* Photo by Anni Roenkae: https://www.pexels.com/photo/close-up-photo-of-abstract-paint-2983141/ colores */
+/*Photo by Zaksheuskaya: https://www.pexels.com/photo/blue-abstract-painting-1568607/ azul*/
+/*Photo by Tamanna Rumee: https://www.pexels.com/photo/white-lines-on-dark-background-7985809/ negro*/
+/* Photo by Dids: https://www.pexels.com/photo/brown-white-and-black-abstract-painting-3704955/ bg2*/
+/* Photo by Dids: https://www.pexels.com/photo/abstract-painting-3906095/ bgpr*/
+/* Photo by Mathias Reding: https://www.pexels.com/photo/colorful-oil-paints-spilled-on-surface-4392541/ bgpr2*/
+
+body {
+    font-size: 20px;
+    height: 100vh;
+}
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --main-color: #9a9999;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: #101010 !important;
+    padding: 10px 10px 2px 10px;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+    color: var(--main-color);
+    margin-right: 180px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #569bb6;
+    transition: 0.7s;
+}
+
+/*BODY*/
+
+/**********************************     INICIO     ******************************************************/
+.bg-container {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+}
+
+.bg-text {
+    color: #fff1f1;
+    text-shadow: 20px 20px 3px rgb(0, 0, 0);
+}
+
+.bg-title {
+    font-weight: bold;
+    font-family: "Bruno Ace SC", cursive;
+    width: 11ch;
+    overflow: hidden;
+    border-right: 0.1em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
+    color: #fff1f1;
+    padding-bottom: 15px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: rgb(255, 254, 254);
+    }
+}
+
+.bg-home {
+    background-image: url("./assets/images/bgn.jpg");
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/**********************************     HABILIDADES     ******************************************************/
+.skCont {
+    padding: 50px;
+    font-family: var(--font-family);
+}
+
+.skTitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 60px;
+}
+
+.cardsk,
+.cardsk li {
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.cardsk h2 {
+    padding: 5px 10px 20px 60px;
+}
+
+.imgCont {
+    padding: 5px 20px 40px 50px;
+}
+
+.skimg {
+    width: 100px;
+}
+
+/**********************************     PROYECTOS     ******************************************************/
+
+
+.prCont {
+    background-image: url('./assets/images/bg1.jpg');
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.cardCont{
+    padding: 20px 100px 20px 100px;
+}
+
+.card{
+    width: 25rem;
+    
+}
+
+.card img{
+    height: 20rem;
+}
+
+/**********************************     RESPONSIVO     ******************************************************/
+@media (max-width: 1200px) {
+
+    /**    INICIO-RESPONSIVO     **/
+    .bg-home {
+        height: 800px;
+    }
+
+    .bg-container {
+        top: 50%;
+        left: 50%;
+    }
+    .bg-text {
+        padding: 10px;
+        font-size: 15px;
+        text-shadow: 15px 15px 3px rgb(0, 0, 0);
+    }
+
+    /**     HABILIDADES-RESPONSIVO    **/
+    .skTitle {
+        font-size: 40px;
+    }
+
+    .imgCont {
+        padding: 10px 15px 10px 10px;
+    }
+
+    .cardsk h2 {
+        padding: 5px 15px 20px 10px;
+        margin: 0 auto;
+    }
+
+    .cardsk li {
+        padding-right: 50px;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+
+    .card{
+    width: 18rem;
+    }
+}
+
+@media (max-width: 1000px){
+
+}
