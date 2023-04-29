@@ -1,10 +1,3 @@
-/* Photo by Anni Roenkae: https://www.pexels.com/photo/close-up-photo-of-abstract-paint-2983141/ colores */
-/*Photo by Zaksheuskaya: https://www.pexels.com/photo/blue-abstract-painting-1568607/ azul*/
-/*Photo by Tamanna Rumee: https://www.pexels.com/photo/white-lines-on-dark-background-7985809/ negro*/
-/* Photo by Dids: https://www.pexels.com/photo/brown-white-and-black-abstract-painting-3704955/ bg2*/
-/* Photo by Dids: https://www.pexels.com/photo/abstract-painting-3906095/ bgpr*/
-/* Photo by Mathias Reding: https://www.pexels.com/photo/colorful-oil-paints-spilled-on-surface-4392541/ bgpr2*/
-
 body {
     font-size: 20px;
     height: 100vh;
@@ -15,20 +8,23 @@ body {
     --main-color: #9a9999;
 }
 
-/*NAVBAR*/
+/**********************************     NAVBAR     ******************************************************/
 .navbar {
-    background-color: #101010 !important;
-    padding: 10px 10px 2px 10px;
+    background: #101010 !important;
+    padding: 5px 5px 2px 5px;
     font-family: var(--font-family);
     font-weight: bold;
+    text-align: right;
 }
 
 .navbar-nav .nav-link,
 .navbar-brand {
     color: var(--main-color);
-    margin-right: 180px;
-}
 
+}
+.nav-link{
+    margin-left: 150px;
+}
 .navbar-nav .nav-link:hover {
     color: #569bb6;
     transition: 0.7s;
@@ -103,7 +99,8 @@ body {
     text-align: center;
     font-weight: 500;
     font-size: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 .cardsk,
@@ -133,21 +130,92 @@ body {
     background-size: cover;
     width: 100%;
     padding: 20px;
-    text-align: center;
+
 }
 
 .cardCont{
-    padding: 20px 100px 20px 100px;
+    padding: 80px 100px 20px 100px;
+    
 }
 
 .card{
     width: 25rem;
-    
 }
 
 .card img{
     height: 20rem;
 }
+
+.card-body h2{
+    font-weight: bold;
+    text-align: center;
+}
+.card-text{
+    font-size: 15px;
+    
+}
+
+.cardCont span{
+    margin: 10px;
+    padding: 5px;
+    background-color: #9a999947;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.cardCont a{
+    margin-top: 20px;
+}
+
+/**********************************     CONTACTO     ******************************************************/
+
+.contactoCont{
+    display: flex;
+    justify-content: center;
+    
+}
+.indCont{
+    margin: 180px 80px;
+    background-color: #fff1f18e;
+    border-radius: 20px;
+    padding: 80px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.322);
+}
+.icon{
+    width: 100px;
+}
+
+.cnTitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 70px;
+
+}
+
+/**********************************     FOOTER     ******************************************************/
+
+footer{
+    background: #101010;
+    padding: 5px 0px;
+    margin-top: 2px;
+    color: var(--main-color);
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-menu a{
+    text-decoration: none;
+    font-size: 10px;
+}
+.btn-custom{
+    background-color: #101010;
+    color: var(--main-color);
+}
+
+
 
 /**********************************     RESPONSIVO     ******************************************************/
 @media (max-width: 1200px) {
@@ -177,7 +245,7 @@ body {
     }
 
     .cardsk h2 {
-        padding: 5px 15px 20px 10px;
+        padding: 15px 15px 20px 10px;
         margin: 0 auto;
     }
 
@@ -190,8 +258,35 @@ body {
     .card{
     width: 18rem;
     }
+
+    /**     PROYECTOS-RESPONSIVO    **/
+    .cardCont{
+        padding: 20px 45px 20px 45px; 
+        
+    }
+
+    /**     CONTACTO-RESPONSIVO    **/
+    .contactoCont{
+        display: grid;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .indCont{
+        margin: 10px;
+        padding: 50px;
+
+    }
+    .icon{
+        width: 50px;
+    }
+    
+    .cnTitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 50px;
+
+}
+    
 }
 
-@media (max-width: 1000px){
-
-}
