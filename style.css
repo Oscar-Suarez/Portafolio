@@ -1,3 +1,4 @@
+
 body {
     font-size: 20px;
     height: 100vh;
@@ -29,6 +30,45 @@ body {
     color: #569bb6;
     transition: 0.7s;
 }
+
+
+/****     TRADUCCIÓN     ****/
+.toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang-button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .lang-button img {
+    height: 20px;
+    width: auto;
+  }
+  
+  #eng-button img {
+    filter: grayscale(100%);
+  }
+  
+  #esp-button img {
+    filter: grayscale(100%);
+  }
+  
+  #eng-button.active img {
+    filter: none;
+  }
+  
+  #esp-button.active img {
+    filter: none;
+  }
+  
+  
+
 
 /*BODY*/
 
