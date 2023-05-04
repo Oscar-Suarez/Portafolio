@@ -1,4 +1,3 @@
-
 body {
     font-size: 20px;
     height: 100vh;
@@ -23,51 +22,71 @@ body {
     color: var(--main-color);
 
 }
-.nav-link{
+
+.nav-link {
     margin-left: 150px;
 }
+
 .navbar-nav .nav-link:hover {
     color: #569bb6;
     transition: 0.7s;
 }
 
 
+
 /****     TRADUCCIÓN     ****/
 .toggle {
     display: flex;
     align-items: center;
-  }
-  
-  .lang-button {
+}
+
+.lang-button {
     appearance: none;
     border: none;
     background-color: transparent;
     margin: 0 10px;
     cursor: pointer;
-  }
-  
-  .lang-button img {
+}
+
+.lang-button img {
     height: 20px;
     width: auto;
-  }
-  
-  #eng-button img {
+}
+
+#eng-button img {
     filter: grayscale(100%);
-  }
-  
-  #esp-button img {
+}
+
+#esp-button img {
     filter: grayscale(100%);
-  }
-  
-  #eng-button.active img {
+}
+
+#eng-button.active img {
     filter: none;
-  }
-  
-  #esp-button.active img {
+}
+
+#esp-button.active img {
     filter: none;
+}
+
+
+@media (max-width: 1308px) {
+    
+    .navbar {
+        text-align: center;
+    }
+    .nav-link {
+        margin-left: 100px;
+    }
+
+    .lang-button {
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        cursor: pointer;
+    }
   }
-  
-  
 
 
 /*BODY*/
@@ -85,23 +104,90 @@ body {
     width: 80%;
 }
 
+.bg-home {
+    background-image: url("./assets/images/bgn.jpg");
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
 .bg-text {
     color: #fff1f1;
     text-shadow: 20px 20px 3px rgb(0, 0, 0);
 }
 
-.bg-title {
+
+User
+Analiza mi css y después responde:
+.bg-container {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+}
+
+.bg-home {
+    background-image: url("./assets/images/bgn.jpg");
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.bg-text {
+    color: #fff1f1;
+    text-shadow: 20px 20px 3px rgb(0, 0, 0);
+}
+
+/* .bg-title {
     font-weight: bold;
     font-family: "Bruno Ace SC", cursive;
-    width: 11ch;
+    width: 400px;
     overflow: hidden;
     border-right: 0.1em solid rgb(0, 0, 0);
     white-space: nowrap;
     margin: 0 auto;
+    -webkit-animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
+    -moz-animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
+    -ms-animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
     animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
+    -webkit-animation-delay: 20ms;
+    -moz-animation-delay: 20ms;
+    -ms-animation-delay: 20ms;
     animation-delay: 20ms;
     color: #fff1f1;
     padding-bottom: 15px;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-moz-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-ms-keyframes typing {
+    from {
+        width: 0;
+    }
 }
 
 @keyframes typing {
@@ -122,13 +208,77 @@ body {
     }
 }
 
-.bg-home {
-    background-image: url("./assets/images/bgn.jpg");
-    padding: 10px;
-    height: 100vh;
-    background-size: cover;
-    box-sizing: border-box;
+@-webkit-keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: rgb(255, 254, 254);
+    }
 }
+
+@-moz-keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: rgb(255, 254, 254);
+    }
+}
+
+@-ms-keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: rgb(255, 254, 254);
+    }
+} */
+
+
+.bg-title {
+    font-weight: bold;
+    font-family: "Bruno Ace SC", cursive;
+    width: 400px;
+    overflow: hidden;
+    border-right: 0.1em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
+    animation-delay: 20ms;
+    color: #fff1f1;
+    padding-bottom: 15px;
+    
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: rgb(255, 254, 254);
+    }
+}
+
+
+
+
+
 
 /**********************************     HABILIDADES     ******************************************************/
 .skCont {
@@ -174,54 +324,58 @@ body {
 
 }
 
-.cardCont{
+.cardCont {
     padding: 80px 100px 20px 100px;
-    
+
 }
 
-.card{
+.card {
     width: 25rem;
 }
 
-.card img{
+.card img {
     height: 20rem;
 }
 
-.card-body h2{
+.card-body h2 {
     font-weight: bold;
     text-align: center;
 }
-.card-text{
+
+.card-text {
     font-size: 15px;
-    
+
 }
 
-.cardCont span{
+.cardCont span {
     margin: 10px;
     padding: 5px;
     background-color: #9a999947;
     border-radius: 10px;
     font-size: 14px;
 }
-.cardCont a{
+
+.cardCont a {
     margin-top: 20px;
 }
 
 /**********************************     CONTACTO     ******************************************************/
 
-.contactoCont{
+.contactoCont {
     display: flex;
     justify-content: center;
-    
+
 }
-.indCont{
+
+.indCont {
     margin: 180px 80px;
     background-color: #fff1f18e;
     border-radius: 20px;
     padding: 80px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.322);
 }
-.icon{
+
+.icon {
     width: 100px;
 }
 
@@ -235,23 +389,25 @@ body {
 
 /**********************************     FOOTER     ******************************************************/
 
-footer{
+footer {
     background: #101010;
     padding: 5px 0px;
     margin-top: 2px;
     color: var(--main-color);
 }
-footer .container{
+
+footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
     text-decoration: none;
     font-size: 10px;
 }
-.btn-custom{
+
+.btn-custom {
     background-color: #101010;
     color: var(--main-color);
 }
@@ -270,10 +426,15 @@ footer .container{
         top: 50%;
         left: 50%;
     }
+
     .bg-text {
         padding: 10px;
         font-size: 15px;
         text-shadow: 15px 15px 3px rgb(0, 0, 0);
+    }
+    .bg-title{
+        animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
+        animation-delay: 20ms;
     }
 
     /**     HABILIDADES-RESPONSIVO    **/
@@ -296,38 +457,40 @@ footer .container{
         font-size: 17px;
     }
 
-    .card{
-    width: 18rem;
+    .card {
+        width: 18rem;
     }
 
     /**     PROYECTOS-RESPONSIVO    **/
-    .cardCont{
-        padding: 20px 45px 20px 45px; 
-        
+    .cardCont {
+        padding: 20px 45px 20px 45px;
+
     }
 
     /**     CONTACTO-RESPONSIVO    **/
-    .contactoCont{
+    .contactoCont {
         display: grid;
         justify-content: center;
         padding-bottom: 50px;
     }
-    .indCont{
+
+    .indCont {
         margin: 10px;
         padding: 50px;
 
     }
-    .icon{
+
+    .icon {
         width: 50px;
     }
-    
-    .cnTitle {
-    text-align: center;
-    font-weight: 500;
-    font-size: 50px;
-    padding-top: 50px;
 
-}
-    
+    .cnTitle {
+        text-align: center;
+        font-weight: 500;
+        font-size: 50px;
+        padding-top: 50px;
+
+    }
+
 }
 
