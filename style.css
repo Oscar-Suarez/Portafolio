@@ -207,17 +207,21 @@ body {
 }
 
 .cardCont {
-    padding: 80px 100px 20px 100px;
-
+    padding: 0px;
 }
 
 .card {
-    width: 25rem;
+    max-width: 25rem;
+    margin-left: 12%;
+    margin-top: 10%;
 }
 
+
 .card img {
-    height: 20rem;
+    height: 40rem;
+    width: auto;
 }
+
 
 .card-body h2 {
     font-weight: bold;
@@ -339,15 +343,6 @@ footer .container {
         font-size: 17px;
     }
 
-    .card {
-        width: 18rem;
-    }
-
-    /**     PROYECTOS-RESPONSIVO    **/
-    .cardCont {
-        padding: 20px 45px 20px 37px;
-
-    }
 
     /**     CONTACTO-RESPONSIVO    **/
     .contactoCont {
@@ -370,8 +365,14 @@ footer .container {
         text-align: center;
         font-size: 50px;
         padding-top: 50px;
-
     }
-
 }
+
+ @media (max-width: 850px){
+
+    .cardCont {
+        margin-left: -12px;
+    }
+} 
+
 
