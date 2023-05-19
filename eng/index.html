@@ -8,7 +8,8 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-    <link href="./style.css" rel="stylesheet" />
+    <!--CSS-->
+    <link href="../style.css" rel="stylesheet" />
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Fuentes-->
@@ -23,7 +24,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-sm">
             <a class="navbar-brand" href="#">
-                <img src="./assets/images/OSW.png" alt="logo" width="60" height="50">
+                <img src="../assets/images/OSW.png" alt="logo" width="60" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,24 +34,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Inico</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#Habilidades">Habilidades</a>
+                        <a class="nav-link" aria-current="page" href="#Habilidades">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#Proyectos">Proyectos</a>
+                        <a class="nav-link" aria-current="page" href="#Proyectos">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contacto">Contacto</a>
+                        <a class="nav-link" href="#Contacto">Contact</a>
                     </li>
                 </ul>
                 <div class="toggle">
-                    <button class="lang-button " id="eng-button">
-                        <img src="./assets/images/uk.png" alt="English">
+                    <button class="lang-button active" id="eng-button">
+                        <img src="../assets/images/uk.png" alt="English">
                     </button>
-                    <button class="lang-button active" id="esp-button">
-                        <img src="./assets/images/mx.png" alt="Español">
+                    <button class="lang-button" id="esp-button">
+                        <img src="../assets/images/mx.png" alt="Español">
                     </button>
                 </div>
 
@@ -61,19 +62,19 @@
     <!--------------------------------INICIO-------------------------------->
     <div class="bg-home"></div>
     <div class="bg-container">
-        <h1 class="bg-title">¡HOLA MUNDO!</h1>
-        <p class="bg-text">Mi nombre es Oscar Suarez, soy un Desarrollador Web Fullstack Jr viviendo actualmente en
+        <h1 class="bg-title">HELLO WORLD!</h1>
+        <p class="bg-text">I'm Oscar suarez, a Full Stack Web Developer Jr based in
             Jalisco, México.
         </p>
     </div>
 
     <!--------------------------------HABILIDADES-------------------------------->
     <div class="skCont container-sm" id="Habilidades">
-        <h1 class="skTitle">HABILIDADES</h1>
+        <h1 class="skTitle">SKILLS</h1>
         <div class="row">
             <div class="cardsk col-md-4" data-aos="zoom-in-right" data-aos-duration="1200">
 
-                <div class="imgCont"> <img src="./assets/images/frontend.png" alt="frontend" class="skimg"></div>
+                <div class="imgCont"> <img src="../assets/images/frontend.png" alt="frontend" class="skimg"></div>
                 <h2>
                     FrontEnd
                 </h2>
@@ -87,7 +88,7 @@
                 </ul>
             </div>
             <div class="cardsk col-md-4" data-aos="zoom-in" data-aos-duration="1200">
-                <div class="imgCont"> <img src="./assets/images/backend.png" alt="frontend" class="skimg"></div>
+                <div class="imgCont"> <img src="../assets/images/backend.png" alt="frontend" class="skimg"></div>
                 <h2>
                     BackEnd
                 </h2>
@@ -101,9 +102,9 @@
                 </ul>
             </div>
             <div class="cardsk col-md-4" data-aos="zoom-in-left" data-aos-duration="1200">
-                <div class="imgCont"> <img src="./assets/images/tools.png" alt="frontend" class="skimg"></div>
+                <div class="imgCont"> <img src="../assets/images/tools.png" alt="frontend" class="skimg"></div>
                 <h2>
-                    Herramientas
+                    Tools
                 </h2>
                 <ul>
                     <li>Git</li>
@@ -122,27 +123,27 @@
     <!--------------------------------PROYECTOS-------------------------------->
     <div class="prCont">
         <div class="container-sm" id="Proyectos">
-            <div class="row">
+            <div class="row prRow">
 
                 <div class="col-md-6 col-sm-12 cardCont" data-aos="fade-up" data-aos-duration="1500">
                     <!--------------------------------PRIMERA COLUMNA-------------------------------->
                     <div class="card cardpr1">
-                        <img src="./assets/images/portafolio.png" class="card-img-top" alt="...">
+                        <img src="../assets/images/portafolio.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h2 class="card-title">Portafolio</h2>
-                            <h4>Página personal</h4>
-                            <p class="card-text">Portafolio personal construido para mostrar proyectos.</p>
+                            <h2 class="card-title">Portfolio</h2>
+
+                            <p class="card-text">Personal portfolio built to show projects</p>
                             <div>
-                                <h6>Tecnologías:</h6>
+                                <h6>Technologies:</h6>
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                                 <span>Bootstrap</span>
                             </div>
                             <a href="https://oscar-suarez.github.io/Portafolio/" target="_blank"
-                                class="btn btn-dark">Página</a>
+                                class="btn btn-dark">Page</a>
                             <a href="https://github.com/Oscar-Suarez/Portafolio" target="_blank"
-                                class="btn btn-secondary">Códio GitHub</a>
+                                class="btn btn-secondary">Github Code</a>
                         </div>
                     </div>
                 </div>
@@ -150,15 +151,15 @@
                 <div class="col-md-6 col-sm-12 cardCont">
                     <!--------------------------------SEGUNDA COLUMNA-------------------------------->
                     <div class="card cardpr2" data-aos="fade-down" data-aos-duration="1500">
-                        <img src="./assets/images/Balxhe.png" class="card-img-top" alt="...">
+                        <img src="../assets/images/Balxhe.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">Balxhe</h2>
-                            <h4>E-commerce (en equipo)</h4>
-                            <p class="card-text">E-commerce para la venta y distribución de alcohol hecha en frontend
-                                con bootstrap, HTML, CSS y JavaScript y construido en la parte de backend con Java y
-                                bases de datos con MySQL y Spring Boot.</p>
+                            <h4>E-commerce (teamwork)</h4>
+                            <p class="card-text">E-commerce for the sale and distribution of alcohol made on the
+                                frontend with bootstrap, HTML, CSS and JavaScript and built on the backend part with
+                                Java and databases with MySQL and Spring Boot.</p>
                             <div>
-                                <h6>Tecnologías:</h6>
+                                <h6>Technologies:</h6>
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
@@ -168,29 +169,30 @@
                                 <span>Spring Boot.</span>
                             </div>
                             <a href="https://oscar-suarez.github.io/ProyectoIntegradorEquipo2/" target="_blank"
-                                class="btn btn-dark">Página</a>
+                                class="btn btn-dark">Page</a>
                             <a href="https://github.com/Oscar-Suarez/ProyectoIntegradorEquipo2" target="_blank"
-                                class="btn btn-secondary">Códio GitHub</a>
+                                class="btn btn-secondary">Github Code</a>
                         </div>
                     </div>
                 </div>
 
+                
                 <div class="col-md-6 col-sm-12 cardCont" data-aos="fade-up" data-aos-duration="1500">
                     <!--------------------------------TERCERA COLUMNA-------------------------------->
                     <div class="card cardpr3">
                         <img src="./assets/images/TimerPokemon.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">PokeTimer</h2>
-                            <h4>Timer/Cronómetro.</h4>
-                            <p class="card-text">Timer con temática de pokémon, construido en React; el Timer está pensado para ayudar a la gente con cualquier cosa que necesite cronometrar y recibir recompensas por ello. De momento solo está desplegado el FrontEnd, sin embargo el BackeEnd se encuentra realizado y puedes revisar el código.</p>
+                            <h4>Timer.</h4>
+                            <p class="card-text">Pokemon-themed timer, built on React; the Timer is meant to help people with anything they need to time and get rewarded for it. At the moment, only the FrontEnd is deployed, however the Backend is done and you can review the code.</p>
                             <div>
-                                <h6>Tecnologías:</h6>
+                                <h6>Technologies:</h6>
                                 <span>React.js</span>
                                 <span>CSS Modules</span>
                                 <span>JavaScript</span>
                                 <span>Node.js</span>
                                 <span>MongoDB</span>
-                                <h6>Dependencias:</h6>
+                                <h6>Dependencies:</h6>
                                 <span>Axios</span>
                                 <span>Express</span>
                                 <span>Aos</span>
@@ -198,11 +200,11 @@
                                 <span>Mongoose-paginate-v2</span>
                             </div>
                             <a href="https://oscar-suarez.github.io/PokeTimerFE/" target="_blank"
-                                class="btn btn-dark">Página</a>
+                                class="btn btn-dark">Page</a>
                             <a href="https://github.com/Oscar-Suarez/PokeTimerFE" target="_blank"
-                                class="btn btn-secondary">Códio GitHub</a>
+                                class="btn btn-secondary">GitHub Code</a>
                                 <a href="https://github.com/Oscar-Suarez/PokeTimerBE" target="_blank"
-                                class="btn btn-dark">Código BackEnd(NO DESPLEGADO)</a>
+                                class="btn btn-dark">BackEnd Code(NOT DEPLOYED)</a>
                         </div>
                     </div>
                 </div>
@@ -215,21 +217,21 @@
     <!--------------------------------CONTACTO-------------------------------->
     <div class="container-sm" id="Contacto">
         <div class="row">
-            <h1 class="cnTitle">Contacto</h1>
+            <h1 class="cnTitle">Contact</h1>
             <div class="col-md-12 contactoCont">
                 <a href="https://github.com/Oscar-Suarez" target="_blank">
                     <div class="indCont" data-aos="zoom-out-up" data-aos-duration="1500">
-                        <img src="./assets/images/github.png" alt="github" class="icon">
+                        <img src="../assets/images/github.png" alt="github" class="icon">
                     </div>
                 </a>
                 <a href="mailto:oscar.suarezwgd@gmail.com" target="_blank">
                     <div class="indCont" data-aos="zoom-out-up" data-aos-duration="1500">
-                        <img src="./assets/images/gmail.png" alt="gmail" class="icon">
+                        <img src="../assets/images/gmail.png" alt="gmail" class="icon">
                     </div>
                 </a>
                 <a href="https://www.linkedin.com/in/oscar-m-suarez-r/" target="_blank">
                     <div class="indCont" data-aos="zoom-out-up" data-aos-duration="1500">
-                        <img src="./assets/images/logotipo-de-linkedin.png" alt="linkedin" class="icon">
+                        <img src="../assets/images/logotipo-de-linkedin.png" alt="linkedin" class="icon">
                     </div>
                 </a>
             </div>
@@ -246,19 +248,19 @@
             <div class="btn-group dropup">
                 <button type="button" class="btn btn-custom dropdown-toggle btn-sm" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    Derechos de imágenes
+                    Authors of the images
                 </button>
                 <ul class="dropdown-menu">
                     <li><a href="https://www.pexels.com/photo/white-lines-on-dark-background-7985809/"
-                            target="_blank">Foto por Tamanna Rumee</a></li>
+                            target="_blank">Photo by Tamanna Rumee</a></li>
                     <li><a href="https://www.pexels.com/photo/close-up-photo-of-abstract-paint-2983141/"
-                            target="_blank">Foto por Anni Roenkae</a></li>
+                            target="_blank">Photo by Anni Roenkae</a></li>
                     <li><a href="https://www.flaticon.es/iconos-gratis/linkedin" title="linkedin iconos"
-                            target="_blank">Linkedin icono creado por Rakib Hassan Rahim - Flaticon</a> </li>
+                            target="_blank">Linkedin icons created by Rakib Hassan Rahim - Flaticon</a> </li>
                     <li><a href="https://www.flaticon.es/iconos-gratis/gmail" title="gmail iconos" target="_blank">Gmail
-                            icono creado por Freepik - Flaticon</a></li>
+                            icons created by Freepik - Flaticon</a></li>
                     <li><a href="https://www.flaticon.es/iconos-gratis/github" title="github iconos"
-                            target="_blank">Github icono creado por Pixel perfect - Flaticon</a></li>
+                            target="_blank">Github icons created by Pixel perfect - Flaticon</a></li>
 
                 </ul>
             </div>
@@ -276,7 +278,7 @@
         AOS.init();
     </script>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

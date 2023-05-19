@@ -22,17 +22,83 @@ body {
     color: var(--main-color);
 
 }
-.nav-link{
+
+.nav-link {
     margin-left: 150px;
 }
+
 .navbar-nav .nav-link:hover {
-    color: #569bb6;
+    color: #383838;
     transition: 0.7s;
 }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(154, 153, 153, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") ;
+}
+
+
+
+
+/****     TRADUCCIÓN     ****/
+.toggle {
+    display: flex;
+    align-items: center;
+}
+
+.lang-button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.lang-button img {
+    height: 20px;
+    width: auto;
+}
+
+#eng-button img {
+    filter: grayscale(100%);
+}
+
+#esp-button img {
+    filter: grayscale(100%);
+}
+
+#eng-button.active img {
+    filter: none;
+}
+
+#esp-button.active img {
+    filter: none;
+}
+
+
+@media (max-width: 1308px) {
+    
+    .navbar {
+        text-align: center;
+    }
+    .nav-link {
+        margin-left: 100px;
+    }
+
+    .lang-button {
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        cursor: pointer;
+    }
+}
+
 
 /*BODY*/
 
 /**********************************     INICIO     ******************************************************/
+
+
 .bg-container {
     text-align: center;
     font-family: var(--font-family);
@@ -45,20 +111,30 @@ body {
     width: 80%;
 }
 
+.bg-home {
+    background-image: url("./assets/images/bgn.jpg");
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
 .bg-text {
     color: #fff1f1;
     text-shadow: 20px 20px 3px rgb(0, 0, 0);
 }
 
+
 .bg-title {
     font-weight: bold;
     font-family: "Bruno Ace SC", cursive;
-    width: 11ch;
+    width: 400px;
     overflow: hidden;
     border-right: 0.1em solid rgb(0, 0, 0);
     white-space: nowrap;
     margin: 0 auto;
     animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
+    animation-delay: 20ms;
     color: #fff1f1;
     padding-bottom: 15px;
 }
@@ -81,13 +157,10 @@ body {
     }
 }
 
-.bg-home {
-    background-image: url("./assets/images/bgn.jpg");
-    padding: 10px;
-    height: 100vh;
-    background-size: cover;
-    box-sizing: border-box;
-}
+
+
+
+
 
 /**********************************     HABILIDADES     ******************************************************/
 .skCont {
@@ -133,60 +206,67 @@ body {
 
 }
 
-.cardCont{
-    padding: 80px 100px 20px 100px;
-    
+.cardCont {
+    padding: 0px;
 }
 
-.card{
-    width: 25rem;
+.card {
+    max-width: 25rem;
+    margin-left: 12%;
+    margin-top: 10%;
 }
 
-.card img{
-    height: 20rem;
+
+.card img {
+    height: 40rem;
+    width: auto;
 }
 
-.card-body h2{
+
+.card-body h2 {
     font-weight: bold;
     text-align: center;
 }
-.card-text{
+
+.card-text {
     font-size: 15px;
-    
+
 }
 
-.cardCont span{
+.cardCont span {
     margin: 10px;
     padding: 5px;
     background-color: #9a999947;
     border-radius: 10px;
     font-size: 14px;
 }
-.cardCont a{
+
+.cardCont a {
     margin-top: 20px;
 }
 
 /**********************************     CONTACTO     ******************************************************/
 
-.contactoCont{
+.contactoCont {
     display: flex;
     justify-content: center;
-    
+
 }
-.indCont{
+
+.indCont {
     margin: 180px 80px;
     background-color: #fff1f18e;
     border-radius: 20px;
     padding: 80px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.322);
 }
-.icon{
+
+.icon {
     width: 100px;
 }
 
 .cnTitle {
     text-align: center;
-    font-weight: 500;
     font-size: 50px;
     padding-top: 70px;
 
@@ -194,23 +274,25 @@ body {
 
 /**********************************     FOOTER     ******************************************************/
 
-footer{
+footer {
     background: #101010;
     padding: 5px 0px;
     margin-top: 2px;
     color: var(--main-color);
 }
-footer .container{
+
+footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
     text-decoration: none;
     font-size: 10px;
 }
-.btn-custom{
+
+.btn-custom {
     background-color: #101010;
     color: var(--main-color);
 }
@@ -229,10 +311,16 @@ footer .container{
         top: 50%;
         left: 50%;
     }
+
     .bg-text {
         padding: 10px;
         font-size: 15px;
         text-shadow: 15px 15px 3px rgb(0, 0, 0);
+    }
+    .bg-title {
+
+        width: 290px;
+        border-right: 0.08em solid rgb(0, 0, 0);
     }
 
     /**     HABILIDADES-RESPONSIVO    **/
@@ -255,38 +343,36 @@ footer .container{
         font-size: 17px;
     }
 
-    .card{
-    width: 18rem;
-    }
-
-    /**     PROYECTOS-RESPONSIVO    **/
-    .cardCont{
-        padding: 20px 45px 20px 45px; 
-        
-    }
 
     /**     CONTACTO-RESPONSIVO    **/
-    .contactoCont{
+    .contactoCont {
         display: grid;
         justify-content: center;
         padding-bottom: 50px;
     }
-    .indCont{
+
+    .indCont {
         margin: 10px;
         padding: 50px;
 
     }
-    .icon{
+
+    .icon {
         width: 50px;
     }
-    
-    .cnTitle {
-    text-align: center;
-    font-weight: 500;
-    font-size: 50px;
-    padding-top: 50px;
 
+    .cnTitle {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 50px;
+    }
 }
-    
-}
+
+ @media (max-width: 850px){
+
+    .cardCont {
+        margin-left: -12px;
+    }
+} 
+
 
