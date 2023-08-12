@@ -222,19 +222,18 @@ body {
     display: flex;
     flex-direction: row;
     margin: 9% 6% 9% 6%;
-
 }
 
 .card {
     flex: 1; 
-    height: 500px;
+    height: 400%;
+}
 
-
+.card-contImg{
+    flex: 1.5; 
 }
 .card-img {
-    flex: 1.5; 
-    height: 500px;
-
+    height: 100%;
 }
 .card-body{
     width: auto;
@@ -322,6 +321,7 @@ footer .container {
 
 
 /**********************************     RESPONSIVO     ******************************************************/
+
 @media (max-width: 1200px) {
 
     /**    INICIO-RESPONSIVO     **/
@@ -364,6 +364,30 @@ footer .container {
     }
 
 
+
+
+    
+    /** PROYECTOS-RESPONSIVO **/
+    .cardCont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5% ;
+    }
+    
+    .card {
+        width: 70%;
+        background-color: #fff1f1d8;
+    }
+    .card-contImg{
+        width: 80%;
+        margin-bottom: 2%;
+    }
+
+
+
+
+
+
     /**     CONTACTO-RESPONSIVO    **/
     .contactoCont {
         display: grid;
@@ -388,13 +412,23 @@ footer .container {
     }
 }
 
-@media (max-width: 850px) {
+@media(max-width: 600px){
+    .card-contImg{
+        width: 100%;
 
-    .cardCont {
-        margin-left: -12px;
+    }
+    .card-text {
+
+        font-size: 15px;
+    }
+    .cardCont span {
+        font-size: 13px;
+    }
+    
+    .cardCont a {
+        font-size: 14px;
     }
 }
-
 @media (max-width: 400px) {
 .bg-title{
     font-size: 70%;}}
