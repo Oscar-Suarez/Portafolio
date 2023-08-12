@@ -215,36 +215,44 @@ body {
 .prCont {
     background-image: url('./assets/images/bg1.jpg');
     background-size: cover;
-    width: 100%;
-    padding: 20px;
-
+    padding: 5px 0px;
 }
 
 .cardCont {
-    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 9% 6% 9% 6%;
+
 }
 
 .card {
-    max-width: 25rem;
-    margin-left: 12%;
-    margin-top: 10%;
+    flex: 1; 
+    height: 500px;
+
+
 }
+.card-img {
+    flex: 1.5; 
+    height: 500px;
 
-
-.card img {
-    height: 40rem;
+}
+.card-body{
     width: auto;
 }
-
-
 .card-body h2 {
     font-weight: bold;
     text-align: center;
 }
 
+.card-title{
+    margin: 2px 0px 20px 0px;
+}
 .card-text {
-    font-size: 15px;
-
+    margin: 2% 0%;
+    font-size: 16px;
+}
+.card-tech{
+    margin: 90px 0px 10px 0px;
 }
 
 .cardCont span {
@@ -256,7 +264,7 @@ body {
 }
 
 .cardCont a {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /**********************************     CONTACTO     ******************************************************/
