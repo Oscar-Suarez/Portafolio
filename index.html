@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon"  href="./assets/images/OSW.png">
+    <link rel="icon" href="./assets/images/OSW.png">
     <title>Portafolio</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -62,11 +62,13 @@
     <!--------------------------------INICIO-------------------------------->
     <div class="bg-home"></div>
     <div class="bg-container">
-        <div class="bg-cont"><h1 class="bg-title">¡HOLA MUNDO!</h1></div>
+        <div class="bg-cont">
+            <h1 class="bg-title">¡HOLA MUNDO!</h1>
+        </div>
         <p class="bg-text">Mi nombre es Oscar Suarez, soy un Desarrollador Web Fullstack Jr viviendo actualmente en
             Jalisco, México.
         </p>
-        <a href="./assets/CV/Oscar_Suarez_ESP.pdf" download >
+        <a href="./assets/CV/Oscar_Suarez_ESP.pdf" download>
             <button class="btn btn-secondary CV">Descargar CV</button>
         </a>
     </div>
@@ -126,121 +128,125 @@
 
     <!--------------------------------PROYECTOS-------------------------------->
     <div class="prCont" id="Proyectos">
-        
-                <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500" >
-                    <!--------------------------------PRIMERA COLUMNA-------------------------------->
-                    <div class="card ">
-                        <div class="card-body">
-                            <h2 class="card-title">Portafolio</h2>
-                            <h4>Página personal. (Responsiva)</h4>
-                            <p class="card-text">Portafolio personal responsivo construido con html, css, JavaScript y Bootstrap para mostrar proyectos.</p>
-                            <div class="card-tech">
-                                <h6>Tecnologías:</h6>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Bootstrap</span>
-                            </div>
-                            <a href="https://oscar-suarez.github.io/Portafolio/" target="_blank"
-                                class="btn btn-dark">Página</a>
-                            <a href="https://github.com/Oscar-Suarez/Portafolio" target="_blank"
-                                class="btn btn-secondary">Códio GitHub</a>
-                        </div>
+
+
+        <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500">
+            <!--------------------------------PRIMERA COLUMNA-------------------------------->
+            <div class="card cardpr1">
+                <div class="card-body">
+                    <h2 class="card-title">PokeTimer</h2>
+                    <h4>Timer/Cronómetro. (Responsiva)</h4>
+                    <p class="card-text">Timer responsivo con temática de pokémon, construido en React; el Timer está
+                        pensado para ayudar a la gente con cualquier cosa que necesite cronometrar y recibir recompensas
+                        por ello. La parte de frontend está desarrolladda con ReactJs y el backend esta hecho en forma
+                        de api REST, desarrollada en node, con express y MongoDB.</p>
+                    <div>
+                        <h6>Tecnologías:</h6>
+                        <span>React.js</span>
+                        <span>CSS Modules</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <h6>Dependencias:</h6>
+                        <span>Axios</span>
+                        <span>Express</span>
+                        <span>Aos</span>
+                        <span>Mongoose</span>
+                        <span>Mongoose-paginate-v2</span>
+                        <span>Render</span>
                     </div>
-                    <img src="./assets/images/Portf.png" class="card-img" alt="...">
+                    <a href="https://oscar-suarez.github.io/PokeTimerTP/" target="_blank"
+                        class="btn btn-secondary">Página completa con Backend(DESPLEGADO)</a>
+                    <a href="https://oscar-suarez.github.io/PokeTimerFE/" target="_blank" class="btn btn-dark">Página
+                        SOLO FRONT END.</a>
+                    <a href="https://github.com/Oscar-Suarez/PokeTimerTP" target="_blank"
+                        class="btn btn-secondary">Códio GitHub.</a>
+                    <a href="https://github.com/Oscar-Suarez/PokeTimerBE" target="_blank" class="btn btn-dark">Código
+                        BackEnd.</a>
                 </div>
+            </div>
+            <img src="./assets/images/pokeTimer.png" class="card-img" alt="...">
+        </div>
 
 
-                
-
-                <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500" >
-                    <!--------------------------------SEGUNDA COLUMNA-------------------------------->
-                    <div class="card cardpr1">
-                        <div class="card-body">
-                            <h2 class="card-title">Balxhe</h2>
-                            <h4>E-commerce. (responsiva, en equipo)</h4>
-                            <p class="card-text">E-commerce responsiva para la venta y distribución de alcohol hecha en frontend
-                                con bootstrap, HTML, CSS y JavaScript y construido en la parte de backend con Java y
-                                bases de datos con MySQL y Spring Boot.</p>
-                            <div class="card-tech">
-                                <h6>Tecnologías:</h6>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Bootstrap</span>
-                                <span>Java</span>
-                                <span>MySQL</span>
-                                <span>Spring Boot.</span>
-                            </div>
-                            <a href="https://oscar-suarez.github.io/ProyectoIntegradorEquipo2/" target="_blank"
-                                class="btn btn-dark">Página</a>
-                            <a href="https://github.com/Oscar-Suarez/ProyectoIntegradorEquipo2" target="_blank"
-                                class="btn btn-secondary">Códio GitHub</a>
-                        </div>
+        <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500">
+            <!--------------------------------SEGUNDA COLUMNA-------------------------------->
+            <div class="card cardpr1">
+                <div class="card-body">
+                    <h2 class="card-title">Ableton página about.</h2>
+                    <h4>Clon de la página about de Ableton. (Responsiva)</h4>
+                    <p class="card-text">Clon responsivo de la página about de Ableton hecha en NextJs13 y desplegada en
+                        vercel.</p>
+                    <div>
+                        <h6>Tecnologías:</h6>
+                        <span>Next.js(13)</span>
+                        <span>CSS Modules</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <h6>Dependencias:</h6>
+                        <span>Vercel</span>
                     </div>
-                    <img src="./assets/images/Balxhe.png" class="card-img" alt="...">
+                    <a href="https://ableton-clone-3skkc89we-oscar-suarez.vercel.app/about" target="_blank"
+                        class="btn btn-secondary">Página about clonada.</a>
+                    <a href="https://github.com/Oscar-Suarez/AbletonClone" target="_blank" class="btn btn-dark">Códio
+                        GitHub.</a>
                 </div>
+            </div>
+            <img src="./assets/images/Ableton.png" class="card-img" alt="...">
+        </div>
 
 
-                <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500" >
-                    <!--------------------------------TERCERA COLUMNA-------------------------------->
-                    <div class="card cardpr1">
-                        <div class="card-body">
-                            <h2 class="card-title">PokeTimer</h2>
-                            <h4>Timer/Cronómetro. (Responsiva)</h4>
-                            <p class="card-text">Timer responsivo con temática de pokémon, construido en React; el Timer está pensado para ayudar a la gente con cualquier cosa que necesite cronometrar y recibir recompensas por ello. La parte de frontend está desarrolladda con ReactJs y el backend esta hecho en forma de api REST, desarrollada en node, con express y MongoDB.</p>
-                            <div>
-                                <h6>Tecnologías:</h6>
-                                <span>React.js</span>
-                                <span>CSS Modules</span>
-                                <span>JavaScript</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
-                                <h6>Dependencias:</h6>
-                                <span>Axios</span>
-                                <span>Express</span>
-                                <span>Aos</span>
-                                <span>Mongoose</span>
-                                <span>Mongoose-paginate-v2</span>
-                                <span>Render</span>
-                            </div>
-                            <a href="https://oscar-suarez.github.io/PokeTimerTP/" target="_blank"
-                            class="btn btn-secondary">Página completa con Backend(DESPLEGADO)</a>
-                            <a href="https://oscar-suarez.github.io/PokeTimerFE/" target="_blank"
-                                class="btn btn-dark">Página SOLO FRONT END.</a>
-                            <a href="https://github.com/Oscar-Suarez/PokeTimerTP" target="_blank"
-                                class="btn btn-secondary">Códio GitHub.</a>
-                                <a href="https://github.com/Oscar-Suarez/PokeTimerBE" target="_blank"
-                                class="btn btn-dark">Código BackEnd.</a>
-                        </div>
+        <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500">
+            <!--------------------------------CUARTA COLUMNA-------------------------------->
+            <div class="card ">
+                <div class="card-body">
+                    <h2 class="card-title">Portafolio</h2>
+                    <h4>Página personal. (Responsiva)</h4>
+                    <p class="card-text">Portafolio personal responsivo construido con html, css, JavaScript y Bootstrap
+                        para mostrar proyectos.</p>
+                    <div class="card-tech">
+                        <h6>Tecnologías:</h6>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
                     </div>
-                    <img src="./assets/images/pokeTimer.png" class="card-img" alt="...">
+                    <a href="https://oscar-suarez.github.io/Portafolio/" target="_blank" class="btn btn-dark">Página</a>
+                    <a href="https://github.com/Oscar-Suarez/Portafolio" target="_blank" class="btn btn-secondary">Códio
+                        GitHub</a>
                 </div>
+            </div>
+            <img src="./assets/images/Portf.png" class="card-img" alt="...">
+        </div>
 
-                <!-- <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500"> -->
-                    <!--------------------------------CUARTA COLUMNA-------------------------------->
-                    <!-- <div class="card cardpr3">
-                        <img src="./assets/images/abletonClone.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Ableton página about</h2>
-                            <h4>Clon de la página about de Ableton.</h4>
-                            <p class="card-text">Clon responsivo de la página about de Ableton hecha en NextJs13 y desplegada en vercel.</p>
-                            <div>
-                                <h6>Tecnologías:</h6>
-                                <span>Next.js(13)</span>
-                                <span>CSS Modules</span>
-                                <span>JavaScript</span>
-                                <span>Node.js</span>
-                                <h6>Dependencias:</h6>
-                                <span>Vercel</span>
-                            </div>
-                            <a href="https://ableton-clone-3skkc89we-oscar-suarez.vercel.app/about" target="_blank"
-                            class="btn btn-secondary">Página about clonada.</a>
-                            <a href="https://github.com/Oscar-Suarez/AbletonClone" target="_blank"
-                                class="btn btn-dark">Códio GitHub.</a>
-                        </div>
+
+        <div class=" cardCont" data-aos="fade-up" data-aos-duration="1500">
+            <!--------------------------------TERCERA COLUMNA-------------------------------->
+            <div class="card cardpr1">
+                <div class="card-body">
+                    <h2 class="card-title">Balxhe</h2>
+                    <h4>E-commerce. (responsiva, en equipo)</h4>
+                    <p class="card-text">E-commerce responsiva para la venta y distribución de alcohol hecha en frontend
+                        con bootstrap, HTML, CSS y JavaScript y construido en la parte de backend con Java y
+                        bases de datos con MySQL y Spring Boot.</p>
+                    <div class="card-tech">
+                        <h6>Tecnologías:</h6>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>Spring Boot.</span>
                     </div>
-                </div> -->
+                    <a href="https://oscar-suarez.github.io/ProyectoIntegradorEquipo2/" target="_blank"
+                        class="btn btn-dark">Página</a>
+                    <a href="https://github.com/Oscar-Suarez/ProyectoIntegradorEquipo2" target="_blank"
+                        class="btn btn-secondary">Códio GitHub</a>
+                </div>
+            </div>
+            <img src="./assets/images/Balxhe.png" class="card-img" alt="...">
+        </div>
 
 
     </div>
