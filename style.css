@@ -126,37 +126,39 @@ body {
 }
 
 
-.bg-title {
+.bg-cont{
+    display: inline-block;
+}
+
+.bg-title{
+    font-size: 150%;
+    letter-spacing: 5px;
+    color: #fff1f1;
     font-weight: bold;
     font-family: "Bruno Ace SC", cursive;
-    width: 400px;
-    overflow: hidden;
-    border-right: 0.1em solid rgb(0, 0, 0);
+    border-right: 2px solid;
+    width: 100%;
     white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 2s steps(11), blink 0.6s infinite step-end alternate;
-    animation-delay: 20ms;
-    color: #fff1f1;
-    padding-bottom: 15px;
+    overflow: hidden;
+    animation: 
+        typing 1.5s steps(20),
+        cursor .4s step-end infinite alternate;
+
+}
+
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
 }
 
 @keyframes typing {
-    from {
+    from{
         width: 0;
     }
+    
 }
 
-@keyframes blink {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: rgb(255, 254, 254);
-    }
-}
 
 .CV {
     margin-top: 2%;
@@ -329,12 +331,9 @@ footer .container {
         font-size: 15px;
         text-shadow: 15px 15px 3px rgb(0, 0, 0);
     }
+    .bg-title{
+        font-size: 100%;}
 
-    .bg-title {
-
-        width: 290px;
-        border-right: 0.08em solid rgb(0, 0, 0);
-    }
 
     /**     HABILIDADES-RESPONSIVO    **/
     .skTitle {
@@ -387,3 +386,7 @@ footer .container {
         margin-left: -12px;
     }
 }
+
+@media (max-width: 400px) {
+.bg-title{
+    font-size: 70%;}}
